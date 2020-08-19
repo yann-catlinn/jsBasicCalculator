@@ -1,0 +1,69 @@
+/*Author: Yann Catlinn
+Description: Js calculator styles
+Date: August, 2020
+*/
+
+body {
+    align-items: center;
+    background: #afd275;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+div.background {
+    background-color: yellowgreen;
+    padding: 20px;
+    width: fit-content;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.grid_calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 5px;
+}
+
+.btn {
+    border: 0;
+    height: 100px;
+    width: 100px;
+    color: darkgray;
+    font-size: 2rem;
+    opacity: 0.8;
+    transition: opacity .5s, font-size .5s, color .5s;
+    cursor: pointer;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.btn1 {
+    background-color: purple;
+}
+
+.btn:hover {
+    opacity: 1;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#display_resultado {
+    display: block;
+    width: 415px;
+    height: 12vh;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2.5rem;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border: 3px solid purple;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(128, 0, 128, 1);
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3), inset -5px -5px 10px 0px rgba(236, 223, 251, 1), inset 5px 5px 10px 0px rgba(154, 136, 175, 1);
+}

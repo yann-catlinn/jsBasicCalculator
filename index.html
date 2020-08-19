@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con JavaScript</title>
+    <link type="text/css" href="estilos.css" rel="stylesheet">
+</head>
+<!--onload me avisa cuando el html se ha cargado y la funcion empieza a correr-->
+
+<body onload="init();">
+    <div class="background">
+        <div>
+            <input id="display_resultado" type="text" readonly>
+        </div>
+        <div class="grid_calculadora">
+            <button class="btn btn1" id="siete">7</button>
+            <button class="btn btn1" id="ocho">8</button>
+            <button class="btn btn1" id="nueve">9</button>
+            <button class="btn btn1" id="division">/</button>
+            <button class="btn btn1" id="cuatro">4</button>
+            <button class="btn btn1" id="cinco">5</button>
+            <button class="btn btn1" id="seis">6</button>
+            <button class="btn btn1" id="multiplicacion">*</button>
+            <button class="btn btn1" id="uno">1</button>
+            <button class="btn btn1" id="dos">2</button>
+            <button class="btn btn1" id="tres">3</button>
+            <button class="btn btn1" id="resta">-</button>
+            <button class="btn btn1" id="igual">=</button>
+            <button class="btn btn1" id="reset">C</button>
+            <button class="btn btn1" id="cero">0</button>
+            <button class="btn btn1" id="suma">+</button>
+        </div>
+    </div>
+    <script type="text/JavaScript" src="calculadora.js"></script>
+</body>
+
+</html>
